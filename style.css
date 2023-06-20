@@ -1,8 +1,6 @@
 body, html {
     margin: 0;
     border-radius: 0%;
-    border-style: double;
-    border-color:black;
     border-bottom: #333;
     padding: 0;
     display: flex;
@@ -10,7 +8,7 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: blue;
+    background-color: #00c0ff pink
     color: #ddd;
     font-family: 'Montserrat', sans-serif;
 }
@@ -19,11 +17,13 @@ img {
     width: 300px;
     height: 300px;
     border-style: dotted;
+    color: cornflowerblue;
     border-style: solid;
+    border-radius: 50%;
 }
-
 .descricao {
     width: 300px;
+    color-scheme: pink;
 }
 
 h2 {
@@ -38,7 +38,7 @@ h2 {
 .barra {
     width: 300px;
     height: 6px;
-    border: 1px solid #eee;
+    border: 1px solid pink;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -48,7 +48,7 @@ h2 {
 progress {
     height: 6px;
     width: 0%;
-    background-color: #333;
+    background-color: blue;
 }
 
 .ponto {
@@ -77,14 +77,17 @@ progress {
 
 .botao-play, .botao-pause {
     font-size: 50px;
+    color: darkgreen;
     cursor: pointer;
 }
 
 .setas {
     font-size: 40px;
+    color:darkblue;
     cursor: pointer;
 }
 
 .botao-pause {
+    color: darkblue;
     display: none;
 }
