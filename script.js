@@ -44,6 +44,7 @@ document.querySelector('.proximo').addEventListener('click', () => {
         musicaIndex = 0;
     }
     renderizarMusica(musicaIndex);
+    tocarMusica();
 });
 
 function renderizarMusica(musicaIndex){
