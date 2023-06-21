@@ -1,7 +1,14 @@
 let musicas = [
-    {titulo:'Guitar solo', artista:'João Tinti', source:'musicas/We Ride! - Reed Mathis.mp3', img:'piano.jpg'},
-    {titulo:'Samba raiz', artista:'Bossa Nova Brasil', source:'musicas/A Brand New Start - TrackTribe (1).mp3', img:'imagens/samba.jpg'},
-    {titulo:'Música piano', artista:'John Green', source:'musicas/A Brand New Start - TrackTribe (1).mp3', img:'imagens/piano.jpg'}
+    {titulo:' Trem das Onze', artista:'Adoniran Barbosa', source:'', img:''},
+    {titulo:'Anunciação', artista:'Alceu Valença', source:'', img:''},
+    {titulo:'Garota De Ipanema', artista:'Tom Jobim', source:'', img:''},
+    {titulo:'Pela Luz dos Olhos teus', artista:'Tom Jobim e Miúcha', source:'', img:''},
+    {titulo:'Cheia de Manias', artista:'Raça Negra', source:'', img:''},
+    {titulo:'Você Chegou', artista:'Rio 2', source:'', img:''},
+    {titulo:'Vou Deixar', artista:'Skank', source:'', img:''},
+    {titulo:'O Descobridor Dos Sete Mares', artista:'Tim Maia', source:'', img:''},
+    {titulo:'Carolina, Carol Bela', artista:'Toquinho', source:'', img:''},
+    {titulo:'Preciso Me Encontrar', artista:'Cartola', source:'', img:''},
 ];
 let musica = document.querySelector('audio');
 let musicaIndex = 0;
