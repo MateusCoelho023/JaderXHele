@@ -1,14 +1,14 @@
 let musicas = [
-    {titulo:' Trem das Onze', artista:'Adoniran Barbosa', source:'Adoniran Barbosa - Trem das Onze (Letra).mp3', img:''},
-    {titulo:'Anunciação', artista:'Alceu Valença', source:'Alceu Valença - Anunciação ( letra ).mp3', img:''},
-    {titulo:'Garota De Ipanema', artista:'Tom Jobim', source:'Garota De Ipanema.mp3', img:''},
-    {titulo:'Pela Luz dos Olhos teus', artista:'Tom Jobim e Miúcha', source:'Pela Luz dos Olhos teus - Tom Jobim e Miúcha _ _Letra.mp3', img:''},
-    {titulo:'Cheia de Manias', artista:'Raça Negra', source:'AÇA NEGRA - CHEIA DE MANIAS (LETRA).mp3', img:''},
-    {titulo:'Você Chegou', artista:'Rio 2', source:'Rio 2 - Você Chegou (Letra).mp3', img:''},
-    {titulo:'Vou Deixar', artista:'Skank', source:'Skank - Vou Deixar (Letra_Lyrics).mp3', img:''},
-    {titulo:'O Descobridor Dos Sete Mares', artista:'Tim Maia', source:'Tim Maia - O Descobridor Dos Sete Mares (letra).mp3', img:''},
-    {titulo:'Carolina, Carol Bela', artista:'Toquinho', source:'Toquinho - Carolina, Carol Bela (lyrics).mp3', img:''},
-    {titulo:'Preciso Me Encontrar', artista:'Cartola', source:'Preciso Me Encontrar Cartola Letras_Legendado.mp3', img:''},
+    {titulo:' Trem das Onze', artista:'Adoniran Barbosa', source:'JaderXHele-Audios/Adoniran Barbosa - Trem das Onze (Letra).mp3', img:''},
+    {titulo:'Anunciação', artista:'Alceu Valença', source:'JaderXHele-Audios/Alceu Valença - Anunciação ( letra ).mp3', img:''},
+    {titulo:'Garota De Ipanema', artista:'Tom Jobim', source:'JaderXHele-Audios/Garota De Ipanema.mp3', img:''},
+    {titulo:'Pela Luz dos Olhos teus', artista:'Tom Jobim e Miúcha', source:'JaderXHele-Audios/Pela Luz dos Olhos teus - Tom Jobim e Miúcha _ _Letra.mp3', img:''},
+    {titulo:'Cheia de Manias', artista:'Raça Negra', source:'JaderXHele-Audios/AÇA NEGRA - CHEIA DE MANIAS (LETRA).mp3', img:''},
+    {titulo:'Você Chegou', artista:'Rio 2', source:'JaderXHele-Audios/Rio 2 - Você Chegou (Letra).mp3', img:''},
+    {titulo:'Vou Deixar', artista:'Skank', source:'JaderXHele-Audios/Skank - Vou Deixar (Letra_Lyrics).mp3', img:''},
+    {titulo:'O Descobridor Dos Sete Mares', artista:'Tim Maia', source:'JaderXHele-Audios/Tim Maia - O Descobridor Dos Sete Mares (letra).mp3', img:''},
+    {titulo:'Carolina, Carol Bela', artista:'Toquinho', source:'JaderXHele-Audios/Toquinho - Carolina, Carol Bela (lyrics).mp3', img:''},
+    {titulo:'Preciso Me Encontrar', artista:'Cartola', source:'JaderXHele-Audios/Preciso Me Encontrar Cartola Letras_Legendado.mp3', img:''},
 ];
 let musica = document.querySelector('audio');
 let musicaIndex = 0;
