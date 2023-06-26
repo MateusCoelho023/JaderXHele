@@ -8,7 +8,7 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #00c0ff pink
+    background-color: #00c0ff pink;
     color: #ddd;
     font-family: 'Montserrat', sans-serif;
 }
@@ -21,6 +21,7 @@ img {
     border-style: solid;
     border-radius: 50%;
 }
+
 .descricao {
     width: 300px;
     color-scheme: pink;
@@ -37,57 +38,51 @@ h2 {
 
 .barra {
     width: 300px;
-    height: 6px;
-    border: 1px solid pink;
+    height: 5px;
+    background-color: #333;
+    position: relative;
     border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
-progress {
-    height: 6px;
-    width: 0%;
-    background-color: blue;
+.progress {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: #00c0ff;
+    border-radius: 5px;
 }
 
 .ponto {
-    width: 20px;
-    height: 20px;
-    background-color: #eee;
+    width: 10px;
+    height: 10px;
+    background-color: #00c0ff;
+    position: absolute;
+    top: -2.5px;
     border-radius: 50%;
-    margin-left: -10px;
+    right: -5px;
 }
 
 .tempo {
     display: flex;
-    width: 300px;
     justify-content: space-between;
+    margin-top: 5px;
 }
 
 .player {
     width: 300px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
     margin-top: 15px;
-    border-style: outset;
-    border-image:space;
 }
 
-.botao-play, .botao-pause {
-    font-size: 50px;
-    color: darkgreen;
-    cursor: pointer;
-}
-
-.setas {
-    font-size: 40px;
-    color:darkblue;
-    cursor: pointer;
-}
-
+.botao-play,
 .botao-pause {
-    color: darkblue;
-    display: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.anterior,
+.proximo {
+    font-size: 24px;
+    cursor: pointer;
 }
