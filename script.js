@@ -1,9 +1,9 @@
 let musicas = [
-    {titulo:' Trem das Onze', artista:'Adoniran Barbosa', source:'Adoniran Barbosa - Trem das Onze (Letra).mp3', img:'IMG-20230615-WA0006.jpg'},
+    {titulo:'Trem das Onze', artista:'Adoniran Barbosa', source:'Adoniran Barbosa - Trem das Onze (Letra).mp3', img:'IMG-20230615-WA0006.jpg'},
     {titulo:'Anunciação', artista:'Alceu Valença', source:'Alceu Valença - Anunciação ( letra ).mp3', img:'IMG-20230615-WA0007.jpg'},
     {titulo:'Garota De Ipanema', artista:'Tom Jobim', source:'Garota De Ipanema.mp3', img:'IMG-20230615-WA0008.jpg'},
-    {titulo:'Pela Luz dos Olhos teus', artista:'Tom Jobim e Miúcha', source:'Pela Luz dos Olhos teus - Tom Jobim e Miúcha __ _Letra_.mp3', img:'IMG-20230615-WA0009.jpg'},
-    {titulo:'Cheia de Manias', artista:'Raça Negra', source:'AÇA NEGRA - CHEIA DE MANIAS (LETRA).mp3', img:'IMG-20230615-WA0010.jpg'},
+    {titulo:'Pela Luz dos Olhos teus', artista:'Tom Jobim e Miúcha', source:'Pela Luz dos Olhos teus - Tom Jobim e Miúcha (Letra).mp3', img:'IMG-20230615-WA0009.jpg'},
+    {titulo:'Cheia de Manias', artista:'Raça Negra', source:'RAÇA NEGRA - CHEIA DE MANIAS (LETRA).mp3', img:'IMG-20230615-WA0010.jpg'},
     {titulo:'Você Chegou', artista:'Rio 2', source:'Rio 2 - Você Chegou (Letra).mp3', img:'IMG-20230615-WA0011.jpg'},
     {titulo:'Vou Deixar', artista:'Skank', source:'Skank - Vou Deixar (Letra_Lyrics).mp3', img:'IMG-20230615-WA0012.jpg'},
     {titulo:'O Descobridor Dos Sete Mares', artista:'Tim Maia', source:'Tim Maia - O Descobridor Dos Sete Mares (letra).mp3', img:'IMG-20230615-WA0013.jpg'},
@@ -33,14 +33,14 @@ musica.addEventListener('timeupdate', atualizarBarra);
 document.querySelector('.anterior').addEventListener('click', () => {
     musicaIndex--; 
     if (musicaIndex < 0){
-        musicaIndex = 2;
+        musicaIndex = musicas.length - 1;
     }
     renderizarMusica(musicaIndex);
 });
 
 document.querySelector('.proximo').addEventListener('click', () => {
     musicaIndex++;
-    if (musicaIndex > 2){
+    if (musicaIndex >= musicas.length){
         musicaIndex = 0;
     }
     renderizarMusica(musicaIndex);
@@ -54,7 +54,7 @@ function renderizarMusica(musicaIndex){
         nomeMusica.textContent = musicas[musicaIndex].titulo;
         nomeArtista.textContent = musicas[musicaIndex].artista;
         imagem.src = musicas[musicaIndex].img;
-    
+
         duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
     });
 
