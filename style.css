@@ -1,14 +1,12 @@
 body, html {
   margin: 0;
-  border-radius: 0%;
-  border-bottom: #333;
   padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background: linear-gradient(135deg, #00c0ff, pink);
+  background: linear-gradient(to right, darkblue, #8000ff);
   color: #ddd;
   font-family: 'Montserrat', sans-serif;
 }
@@ -16,12 +14,11 @@ body, html {
 img {
   width: 300px;
   height: 300px;
-  border: 2px dashed cornflowerblue;
   border-radius: 50%;
-  animation: rotate 3s linear infinite;
+  animation: spin 5s linear infinite; /* Adiciona a animação de rotação */
 }
 
-@keyframes rotate {
+@keyframes spin {
   0% {
     transform: rotate(0deg);
   }
@@ -32,7 +29,6 @@ img {
 
 .descricao {
   width: 300px;
-  color: pink;
 }
 
 h2 {
@@ -47,7 +43,7 @@ h2 {
 .barra {
   width: 300px;
   height: 6px;
-  border: 1px solid pink;
+  border: 1px solid #eee;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -57,7 +53,7 @@ h2 {
 progress {
   height: 6px;
   width: 0%;
-  background-color: blue;
+  background-color: #333;
 }
 
 .ponto {
@@ -80,23 +76,22 @@ progress {
   justify-content: space-around;
   align-items: center;
   margin-top: 15px;
-  border-style: outset;
-  border-image: space;
+  color: crimson
+  ;
 }
 
 .botao-play, .botao-pause {
   font-size: 50px;
-  color: darkgreen;
   cursor: pointer;
+  color: crimson;
 }
 
 .setas {
   font-size: 40px;
-  color: darkblue;
   cursor: pointer;
 }
 
 .botao-pause {
-  color: darkblue;
   display: none;
+  
 }
