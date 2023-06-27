@@ -1,88 +1,97 @@
 body, html {
-    margin: 0;
-    border-radius: 0%;
-    border-bottom: #333;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #00c0ff pink;
-    color: #ddd;
-    font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, darkblue, #8000ff);
+  color: #ddd;
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
-    width: 300px;
-    height: 300px;
-    border-style: dotted;
-    color: cornflowerblue;
-    border-style: solid;
-    border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  animation: spin 5s linear infinite; /* Adiciona a animação de rotação */
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .descricao {
-    width: 300px;
-    color-scheme: pink;
+  width: 300px;
 }
 
 h2 {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .duracao {
-    width: 300px;
-    margin-top: 25px;
+  width: 300px;
+  margin-top: 25px;
 }
 
 .barra {
-    width: 300px;
-    height: 5px;
-    background-color: #333;
-    position: relative;
-    border-radius: 5px;
+  width: 300px;
+  height: 6px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
-.progress {
-    position: absolute;
-    height: 100%;
-    width: 0;
-    background-color: #00c0ff;
-    border-radius: 5px;
+progress {
+  height: 6px;
+  width: 0%;
+  background-color: #333;
 }
 
 .ponto {
-    width: 10px;
-    height: 10px;
-    background-color: #00c0ff;
-    position: absolute;
-    top: -2.5px;
-    border-radius: 50%;
-    right: -5px;
+  width: 20px;
+  height: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+  margin-left: -10px;
 }
 
 .tempo {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5px;
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
 }
 
 .player {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+  color: crimson
+  ;
 }
 
-.botao-play,
+.botao-play, .botao-pause {
+  font-size: 50px;
+  cursor: pointer;
+  color: crimson;
+}
+
+.setas {
+  font-size: 40px;
+  cursor: pointer;
+}
+
 .botao-pause {
-    font-size: 32px;
-    cursor: pointer;
-}
-
-.anterior,
-.proximo {
-    font-size: 24px;
-    cursor: pointer;
+  display: none;
+  
 }
