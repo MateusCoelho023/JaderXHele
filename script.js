@@ -1,19 +1,15 @@
 let musicas = [
-    {titulo:'memories', artista:'Conan gray', source:'Áudio do WhatsApp de 2023-06-21 à(s) 16.53.46.mp3', img:'01656072193.webp'},
-    {titulo:'Anunciação', artista:'Bossa Nova Brasil', source:'Áudio do WhatsApp de 2023-06-22 à(s) 10.38.16.mp3', img:'Imagem do WhatsApp de 2023-06-22 à(s) 10.27.53.jpg'},
-    {titulo:'Preciso me encontrar', artista:'Cartola', source:'Áudio do WhatsApp de 2023-06-22 à(s) 10.30.05precisomeencontrar.mp3', img:'Imagem do WhatsApp de 2023-06-22 à(s) 10.25.06cartola.jpg'},
-    {titulo:'Carolina', artista:'Vinicius de moraes', source:'Áudio do WhatsApp de 2023-06-22 à(s) 10.38.13carolina.mp3', img:'Imagem do WhatsApp de 2023-06-22 à(s) 10.24.36carlina.jpg'},
-    {titulo:'Pela luz dos olhos teus', artista:'Toquinho', source:'Áudio do WhatsApp de 2023-06-22 à(s) 10.21.09luz.mp3', img:'Imagem do WhatsApp de 2023-06-22 à(s) 10.01.25toquinho.jpg'},
-    {titulo:'Você chegou', artista:'filme rio', source:'Áudio do WhatsApp de 2023-06-22 à(s) 10.22.19rio.mp3', img:'Imagem do WhatsApp de 2023-06-22 à(s) 10.24.40rio.jpg'},
-    {titulo:'Coal drops', artista:'David kushner', source:'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.50coaldrops.mp3', img:'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
-    {titulo:'Dayligth', artista:'David kushner', source:'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.48.datdayligth.unknown', img:'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
-    {titulo:'mr.Forgerttable', artista:'David Kushner', source:'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.51mr.forgerttable.mp3', img:'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
-    {titulo:'Miserable man', artista:'David Kushner', source:'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.53miserableman.mp3', img:'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
-
+    {titulo: 'memories', artista: 'Conan gray', source: 'Áudio do WhatsApp de 2023-06-21 à(s) 16.53.46.mp3', img: '01656072193.webp'},
+    {titulo: 'Anunciação', artista: 'Bossa Nova Brasil', source: 'Áudio do WhatsApp de 2023-06-22 à(s) 10.38.16.mp3', img: 'Imagem do WhatsApp de 2023-06-22 à(s) 10.27.53.jpg'},
+    {titulo: 'Preciso me encontrar', artista: 'Cartola', source: 'Áudio do WhatsApp de 2023-06-22 à(s) 10.30.05precisomeencontrar.mp3', img: 'Imagem do WhatsApp de 2023-06-22 à(s) 10.25.06cartola.jpg'},
+    {titulo: 'Carolina', artista: 'Vinicius de moraes', source: 'Áudio do WhatsApp de 2023-06-22 à(s) 10.38.13carolina.mp3', img: 'Imagem do WhatsApp de 2023-06-22 à(s) 10.24.36carlina.jpg'},
+    {titulo: 'Pela luz dos olhos teus', artista: 'Toquinho', source: 'Áudio do WhatsApp de 2023-06-22 à(s) 10.21.09luz.mp3', img: 'Imagem do WhatsApp de 2023-06-22 à(s) 10.01.25toquinho.jpg'},
+    {titulo: 'Você chegou', artista: 'filme rio', source: 'Áudio do WhatsApp de 2023-06-22 à(s) 10.22.19rio.mp3', img: 'Imagem do WhatsApp de 2023-06-22 à(s) 10.24.40rio.jpg'},
+    {titulo: 'Coal drops', artista: 'David kushner', source: 'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.50coaldrops.mp3', img: 'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
+    {titulo: 'Dayligth', artista: 'David kushner', source: 'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.48.datdayligth.unknown', img: 'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
+    {titulo: 'mr.Forgerttable', artista: 'David Kushner', source: 'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.51mr.forgerttable.mp3', img: 'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
+    {titulo: 'Miserable man', artista: 'David Kushner', source: 'Áudio do WhatsApp de 2023-06-27 à(s) 10.43.53miserableman.mp3', img: 'Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
 ];
-
-
-// INICIO
 let musica = document.querySelector('audio');
 let musicaIndex = 0;
 
@@ -28,7 +24,6 @@ nomeArtista.textContent = musicas[musicaIndex].artista;
 imagem.setAttribute('src', musicas[musicaIndex].img);
 duracaoMusica.textContent = segundosParaMinutos(Math.floor(musica.duration));
 
-// EVENTOS
 document.querySelector('.botao-play').addEventListener('click', tocarMusica);
 
 document.querySelector('.botao-pause').addEventListener('click', pausarMusica);
@@ -51,7 +46,6 @@ document.querySelector('.proximo').addEventListener('click', () => {
     renderizarMusica(musicaIndex);
 });
 
-// FUNÇÕES
 
 function renderizarMusica(musicaIndex){
     musica.setAttribute('src', musicas[musicaIndex].source);
