@@ -1,6 +1,6 @@
 let musicas = [
-    {titulo:'memories', artista:'Conan gray', source:'musicplayer//Áudio do WhatsApp de 2023-06-27 à(s) 10.43.51mr.forgerttable.mp3', img:'musicplayer//Imagem do WhatsApp de 2023-06-22 à(s) 10.01.25toquinho.jpg'},
-    {titulo:'Anunciação', artista:'Bossa Nova Brasil', source:'musicplayer//Áudio do WhatsApp de 2023-06-22 à(s) 10.21.09luz.mp3', img:'musicplayer/Imagem do WhatsApp de 2023-06-22 à(s) 10.01.25toquinho.jpg'},
+    {titulo:'memories', artista:'Conan gray', source:'musicplayer/Áudio do WhatsApp de 2023-06-27 à(s) 10.43.51mr.forgerttable.mp3', img:'musicplayer/Imagem do WhatsApp de 2023-06-22 à(s) 10.01.25toquinho.jpg'},
+    {titulo:'Anunciação', artista:'Bossa Nova Brasil', source:'musicplayer/Áudio do WhatsApp de 2023-06-22 à(s) 10.21.09luz.mp3', img:'musicplayer/Imagem do WhatsApp de 2023-06-22 à(s) 10.01.25toquinho.jpg'},
     {titulo:'Preciso me encontrar', artista:'Cartola', source:'musicplayer/Áudio do WhatsApp de 2023-06-22 à(s) 10.22.19rio.mp3', img:'musicplayer/Imagem do WhatsApp de 2023-06-22 à(s) 10.24.36carlina.jpg'},
     {titulo:'Carolina', artista:'Vinicius de moraes', source:'musicplayer/Áudio do WhatsApp de 2023-06-22 à(s) 10.30.05precisomeencontrar.mp3', img:'musicplayer/Imagem do WhatsApp de 2023-06-22 à(s) 10.24.40rio.jpg'},
     {titulo:'Pela luz dos olhos teus', artista:'Toquinho', source:'musicplayer/Áudio do WhatsApp de 2023-06-22 à(s) 10.30.05precisomeencontrar.mp3', img:'musicplayer/Imagem do WhatsApp de 2023-06-22 à(s) 10.25.06cartola.jpg'},
