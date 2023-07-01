@@ -34,14 +34,14 @@ musica.addEventListener('timeupdate', atualizarBarra);
 document.querySelector('.anterior').addEventListener('click', () => {
     musicaIndex--; 
     if (musicaIndex < 0){
-        musicaIndex = 10;
+        musicaIndex = 11;
     }
     renderizarMusica(musicaIndex);
 });
 
 document.querySelector('.proximo').addEventListener('click', () => {
     musicaIndex++;
-    if (musicaIndex > 9){
+    if (musicaIndex > 10){
         musicaIndex = 0;
     }
     renderizarMusica(musicaIndex);
