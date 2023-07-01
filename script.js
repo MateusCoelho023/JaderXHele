@@ -1,16 +1,15 @@
 let musicas = [
-    {titulo: 'Memories', artista:'Conan gray', source: 'musicas/Áudio do WhatsApp de 2023-06-21 à(s) 16.53.46.mp3', img: 'imagens/01656072193.webp'},
-    {titulo: 'trem das onze', artista:'Andorian Barbosa', source: 'musicasmateus/Adoniran Barbosa - Trem das Onze (Letra).mp3', img: 'imagens/01656072193.webp'},
+    {titulo: 'memories', artista: 'Conan gray', source: 'musicas/Áudio do WhatsApp de 2023-06-21 à(s) 16.53.46.mp3', img: 'imagens/01656072193.webp'},
     {titulo: 'Anunciação', artista: 'Bossa Nova Brasil', source: 'musicas/Áudio do WhatsApp de 2023-06-22 à(s) 10.38.16.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-22 à(s) 10.27.53.jpg'},
-    {titulo: 'Preciso me encontrar', artista: 'Cartola', source: 'musicas/Áudio do WhatsApp de 2023-06-22 à(s) 10.30.05precisomeencontrar.mp3', img: 'imagensImagem do WhatsApp de 2023-06-22 à(s) 10.25.06cartola.jpg'},
-    {titulo: 'Carolina', artista: 'Vinicius de moraes', source: 'muiscas/Áudio do WhatsApp de 2023-06-22 à(s) 10.38.13carolina.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-22 à(s) 10.24.36carlina.jpg'},
+    {titulo: 'Preciso me encontrar', artista: 'Cartola', source: 'musicas/Áudio do WhatsApp de 2023-06-22 à(s) 10.30.05precisomeencontrar.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-22 à(s) 10.25.06cartola.jpg'},
+    {titulo: 'Carolina', artista: 'Vinicius de moraes', source: 'musicas/Áudio do WhatsApp de 2023-06-22 à(s) 10.38.13carolina.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-22 à(s) 10.24.36carlina.jpg'},
     {titulo: 'Pela luz dos olhos teus', artista: 'Toquinho', source: 'musicas/Áudio do WhatsApp de 2023-06-22 à(s) 10.21.09luz.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-22 à(s) 10.01.25toquinho.jpg'},
     {titulo: 'Você chegou', artista: 'filme rio', source: 'musicas/Áudio do WhatsApp de 2023-06-22 à(s) 10.22.19rio.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-22 à(s) 10.24.40rio.jpg'},
     {titulo: 'Coal drops', artista: 'David kushner', source: 'musicas/Áudio do WhatsApp de 2023-06-27 à(s) 10.43.50coaldrops.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
     {titulo: 'Dayligth', artista: 'David kushner', source: 'musicas/Áudio do WhatsApp de 2023-06-27 à(s) 10.43.48.datdayligth.unknown', img: 'imagens/Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
-    {titulo: 'mr.Forgerttable', artista: 'David Kushner', source: 'musicas/musicas/Áudio do WhatsApp de 2023-06-27 à(s) 10.43.51mr.forgerttable.mp3', img: 'imagens/imagens/Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
+    {titulo: 'mr.Forgerttable', artista: 'David Kushner', source: 'musicas/Áudio do WhatsApp de 2023-06-27 à(s) 10.43.51mr.forgerttable.mp3', img: 'imagens/=/Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
     {titulo: 'Miserable man', artista: 'David Kushner', source: 'musicas/Áudio do WhatsApp de 2023-06-27 à(s) 10.43.53miserableman.mp3', img: 'imagens/Imagem do WhatsApp de 2023-06-27 à(s) 10.43.55dayligth.jpg'},
-
+]
 let musica = document.querySelector('audio');
 let musicaIndex = 0;
 
@@ -34,14 +33,14 @@ musica.addEventListener('timeupdate', atualizarBarra);
 document.querySelector('.anterior').addEventListener('click', () => {
     musicaIndex--; 
     if (musicaIndex < 0){
-        musicaIndex = 11;
+        musicaIndex = 12;
     }
     renderizarMusica(musicaIndex);
 });
 
 document.querySelector('.proximo').addEventListener('click', () => {
     musicaIndex++;
-    if (musicaIndex > 10){
+    if (musicaIndex > 11){
         musicaIndex = 0;
     }
     renderizarMusica(musicaIndex);
