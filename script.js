@@ -33,14 +33,25 @@ musica.addEventListener('timeupdate', atualizarBarra);
 document.querySelector('.anterior').addEventListener('click', () => {
     musicaIndex--; 
     if (musicaIndex < 0){
-        musicaIndex = 12;
+        musicaIndex = 10;
     }
     renderizarMusica(musicaIndex);
 });
+let playlist = document.createElement('ul');
+playlist.className = 'playlist';
+
+musicas.forEach((musica) => {
+  let musicaItem = document.createElement('li');
+  musicaItem.textContent = `${musica.titulo} - ${musica.artista}`;
+  playlist.appendChild(musicaItem);
+});
+
+document.body.appendChild(playlist);
+
 
 document.querySelector('.proximo').addEventListener('click', () => {
     musicaIndex++;
-    if (musicaIndex > 11){
+    if (musicaIndex > 9){
         musicaIndex = 0;
     }
     renderizarMusica(musicaIndex);
