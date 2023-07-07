@@ -33,7 +33,7 @@ musica.addEventListener('timeupdate', atualizarBarra);
 document.querySelector('.anterior').addEventListener('click', () => {
     musicaIndex--; 
     if (musicaIndex < 0){
-        musicaIndex = 50;
+        musicaIndex = 10;
     }
     renderizarMusica(musicaIndex);
 });
@@ -51,7 +51,7 @@ document.body.appendChild(playlist);
 
 document.querySelector('.proximo').addEventListener('click', () => {
     musicaIndex++;
-    if (musicaIndex > 49){
+    if (musicaIndex > 9){
         musicaIndex = 0;
     }
     renderizarMusica(musicaIndex);
