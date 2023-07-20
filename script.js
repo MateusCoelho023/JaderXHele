@@ -8,6 +8,7 @@ let musicas = [
     {titulo: 'Descobridor dos sete mares', artista: 'Tim maia', source: 'musicas/Áudio do WhatsApp de 2023-07-03 à(s) 20.52.39mar.mp3', img: 'imagens/IMG-20230615-WA0011.jpg'},
     {titulo: 'Trem das onze', artista: 'Andorian Barbosa', source: 'mmusicas/Áudio do WhatsApp de 2023-07-03 à(s) 20.52.39tremdasonze.mp3', img: 'imagens/IMG-20230615-WA0010.jpg'},
     {titulo: 'Cheia de manias', artista: 'Raça Negra', source: 'musicas/Áudio do WhatsApp de 2023-07-03 à(s) 20.52.40cheiademanias.mp3', img: 'imagens/IMG-20230615-WA0009.jpg'},
+     {titulo: 'Vou deixar', artista: 'Skank', source: 'musicas/Áudio do WhatsApp de 2023-07-03 à(s) 20.52.38voudeixar.mp3', img: 'imagens/IMG-20230615-WA0012.jpg'},
     {titulo: '3 Pulinhos', artista: 'Dilsinho', source: 'musicas/Dilsinho - 3 Pulinhos (DVD Open House Ao Vivo)(MP3_160K).mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
     {titulo: 'Aperta o pause', artista: 'Dilsinho', source: 'musicas/Dilsinho - Aperta o Pause (Garrafas e Bocas)(MP3_160K).mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
     {titulo: 'Astronauta', artista: 'Dilsinho', source: 'musicas/Dilsinho - Astronauta (DVD Open House Ao Vivo)(MP3_160K).mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
