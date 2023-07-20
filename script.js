@@ -27,7 +27,7 @@ let musicas = [
     {titulo: 'Reality show', artista: 'Dilsinho', source: 'musicas/Dilsinho - Reality Show (Garrafas e Bocas)(MP3_160K).mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
     {titulo: 'Restrito', artista: 'Dilsinho', source: 'musicas/Dilsinho - Restrito (DVD Open House Ao Vivo)(MP3_160K).mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
     {titulo: 'Rola um love', artista: 'Dilsinho', source: 'musicas/Dilsinho - Rola um Love (DVD Terra do Nunca Ao Vivo) ft. MC KEVINHO_ DENNIS(MP3_160K).mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
-    {titulo: 'Tamaanho PPP', artista: 'Dilsinho', source: 'musicas/Dilsinho - Tamanho PPP (Áudio Oficial)(MP3_160K) 1.mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
+    {titulo: 'Tamanho PPP', artista: 'Dilsinho', source: 'musicas/Dilsinho - Tamanho PPP (Áudio Oficial)(MP3_160K) 1.mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
     {titulo: 'Tique nervoso', artista: 'Dilsinho', source: 'musicas/Dilsinho - Tique Nervoso (Áudio Oficial)(MP3_160K).mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
     {titulo: 'Toma vergonha', artista: 'Dilsinho', source: 'musicas/Dilsinho - Toma Vergonha (Áudio Oficial)(MP3_160K) 1.mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
     {titulo: 'Última postagem', artista: 'Dilsinho', source: 'musicas/Dilsinho - Última Postagem (Garrafas e Bocas)(MP3_160K) 1.mp3', img: 'imagens/Imagem do WhatsApp de 2023-07-06 à(s) 20.29.05dilsinho.jpg'},
